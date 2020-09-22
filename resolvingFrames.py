@@ -52,7 +52,7 @@ def ProcessVideo(videPath):
 
     countedFrames=count_frames(videPath)
     print("This video has",countedFrames," frames")
-	frameCounter=0
+    frameCounter=0
 	
     cap= cv2.VideoCapture(videPath)
     while True:        
@@ -62,8 +62,8 @@ def ProcessVideo(videPath):
             break
         # Display the resulting frame
         cv2.imshow('frame',frame)
-		cv2.imwrite(videPath[0:-4]+str(frameCounter)+".jpg",frame)
-		frameCounter+=1
+        cv2.imwrite(videPath[0:-4]+str(frameCounter)+".jpg",frame)
+        frameCounter+=1
 
 
         #allowing the programmer to quit the process by pressing q
