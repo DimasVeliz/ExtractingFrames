@@ -76,7 +76,7 @@ def main():
     peoplesDataSet=os.listdir(dataSetPath)
 
         
-    for personalDataSet in peoplesDataSetq:
+    for personalDataSet in peoplesDataSet:
         print("Belonging to-->",personalDataSet)
         foldersContainingVideo= os.listdir(dataSetPath+"/"+personalDataSet)
         for videoFolder in foldersContainingVideo:
